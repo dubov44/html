@@ -12,7 +12,7 @@ class Phone {
         const price = document.createElement('span')
         const oldprice = document.createElement('span')
 
-        div.classList.add('phone')
+        div.classList.add('item')
         h2.classList = 'title'
         h2.textContent = `${element.name}`
         div.append(h2)
