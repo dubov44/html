@@ -1,0 +1,53 @@
+body {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "header"
+    "section"
+    "footer";
+    background-color: #f7f7f7;
+}
+
+header {
+    grid-area: header;
+    padding-left: 237px;
+}
+
+#phones {
+    grid-area: section;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 200px));
+    grid-auto-rows: 150px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    justify-content: center;
+}
+
+.item {
+    border: 1px solid #515151;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding-left: 2px;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 15px;
+}
+
+.newPrice {
+    color: red;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    margin-right: 30px;
+}
+
+footer {
+    grid-area: footer;
+}
+
+button {
+    margin-right: 10px;
+}
